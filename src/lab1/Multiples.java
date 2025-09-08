@@ -17,4 +17,16 @@ public class Multiples {
         }
         return count;
     }
+
+    public static int multiples() {
+        int count = 0;
+        for (int i = 1; i < 1000; i++) {
+            boolean divisibleByThree = i % 3 == 0;
+            boolean divisibleByFive = i % 5 == 0;
+            if (divisibleByThree ||  divisibleByFive) {
+                count++;
+            }
+        }
+        return count;
+    }
 }
